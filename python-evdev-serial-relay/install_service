@@ -1,0 +1,10 @@
+#!/bin/bash
+set -x 
+
+pwd
+rm /lib/systemd/system/dawcontroller.service 
+cp ./dawcontroller.service /lib/systemd/system/dawcontroller.service
+systemctl daemon-reload
+systemctl disable dawcontroller.service
+systemctl enable dawcontroller.service
+

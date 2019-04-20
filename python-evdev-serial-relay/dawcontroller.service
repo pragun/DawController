@@ -1,0 +1,11 @@
+[Unit]
+Description=DawController
+After=local-fs.target
+
+[Service]
+WorkingDirectory=/root/dawcontroller
+ExecStart=/bin/bash -c 'cd /root/dawcontroller; /usr/local/bin/python3.7 dawcontroller.py > /home/pi/dawcontroller.log 2>&1'
+
+[Install]
+WantedBy=local-fs.target
+

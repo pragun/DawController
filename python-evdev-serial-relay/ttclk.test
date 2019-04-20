@@ -1,0 +1,98 @@
+Beginning with an empty touchpad
+Previous state:  TapToClickStage.WAITING
+Post state:  TapToClickStage.WAITING
+False
+
+Adding a finger
+Previous state:  TapToClickStage.WAITING
+Post state:  TapToClickStage.PRIMED
+False
+
+Checking again with the finger, after 0.001000 seconds
+
+Moving the touch by 0,0
+Extra touch point: %d 0
+Previous state:  TapToClickStage.PRIMED
+Distance Moved....0.000000
+Finger Rest Time ..0.001263
+Post state:  TapToClickStage.PRIMED
+False
+
+Removing a finger
+Previous state:  TapToClickStage.PRIMED
+Distance Moved....0.000000
+Finger Rest Time ..0.001309
+Post state:  TapToClickStage.WAITING
+True
+
+Beginning with an empty touchpad
+Previous state:  TapToClickStage.WAITING
+Post state:  TapToClickStage.WAITING
+False
+
+Adding a finger
+Previous state:  TapToClickStage.WAITING
+Post state:  TapToClickStage.PRIMED
+False
+
+Checking again with the finger, after 0.060000 seconds
+
+Moving the touch by 0,0
+Extra touch point: %d 0
+Previous state:  TapToClickStage.PRIMED
+Distance Moved....0.000000
+Finger Rest Time ..0.060406
+Post state:  TapToClickStage.EXPIRED
+False
+
+Removing a finger
+Previous state:  TapToClickStage.EXPIRED
+Post state:  TapToClickStage.WAITING
+False
+
+Beginning with an empty touchpad
+Previous state:  TapToClickStage.WAITING
+Post state:  TapToClickStage.WAITING
+False
+
+Adding a finger
+Previous state:  TapToClickStage.WAITING
+Post state:  TapToClickStage.PRIMED
+False
+
+Checking again with the finger, after 0.001000 seconds
+
+Moving the touch by 100,100
+Extra touch point: %d 0
+Previous state:  TapToClickStage.PRIMED
+Distance Moved....141.421356
+Post state:  TapToClickStage.EXPIRED
+False
+
+Removing a finger
+Previous state:  TapToClickStage.EXPIRED
+Post state:  TapToClickStage.WAITING
+False
+
+Beginning with an empty touchpad
+Previous state:  TapToClickStage.WAITING
+Post state:  TapToClickStage.WAITING
+False
+
+Adding a finger
+Previous state:  TapToClickStage.WAITING
+Post state:  TapToClickStage.PRIMED
+False
+
+Checking again with the finger, after 0.001000 seconds
+
+Moving the touch by 0,0
+Extra touch point: %d 1
+Previous state:  TapToClickStage.PRIMED
+Post state:  TapToClickStage.EXPIRED
+None
+
+Removing a finger
+Previous state:  TapToClickStage.EXPIRED
+Post state:  TapToClickStage.EXPIRED
+False

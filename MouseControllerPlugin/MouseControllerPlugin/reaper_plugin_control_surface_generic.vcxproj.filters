@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="src\control_surface_interface.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\reaper\localize.h">
+      <Filter>reaper</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\reaper\localize-import.h">
+      <Filter>reaper</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\reaper\reaper_plugin.h">
+      <Filter>reaper</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\reaper\reaper_plugin_functions.h">
+      <Filter>reaper</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\reaper\sws_rpf_wrapper.h">
+      <Filter>reaper</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sws_imports.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\control_surface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{2e0b8c11-5864-443c-8958-04ba3bf8f30d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{4d50fa88-3372-4922-bd58-9e625cc1f94e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="reaper">
+      <UniqueIdentifier>{9d8d4cad-0766-4c59-8bc8-7744772575fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sws_b">
+      <UniqueIdentifier>{edcfc89f-6564-413f-be61-c0c077a42895}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\control_surface.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\plugin_main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\threaded_midi.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\res.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

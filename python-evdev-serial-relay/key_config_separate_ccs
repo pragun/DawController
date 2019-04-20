@@ -1,0 +1,23 @@
+#Legend
+#This is one of the example config files that sends out mouse movement on different CC values, if needed
+#What functions to call when some button is pressed on the mouse
+#Which button?	   	     #ReportX,Y	    	    	#ReportWhl	#OnlyKeypress
+
+
+None 		   	     report_movement(2)	    	report_scroll()	do_nothing()		
+evdev.ecodes.KEY_1 	     cc_xy(0,1)		    	cc_whl(2)	note_on(0)
+evdev.ecodes.KEY_2	     cc_xy(4,5)		    	cc_whl(6)	note_on(4)
+evdev.ecodes.KEY_3 	     cc_xy(8,9)	    		cc_whl(10)	note_on(8)
+evdev.ecodes.KEY_4 	     report_movement(1)     	cc_whl(14)	note_on(12)
+evdev.ecodes.KEY_5 	     cc_xy(16,17)  	    	cc_whl(18)	note_on(16)
+evdev.ecodes.KEY_6 	     cc_xy(20,21)  	    	cc_whl(22)	note_on(20)
+evdev.ecodes.KEY_7 	     cc_xy(24,25)  	    	cc_whl(26)	note_on(24)
+evdev.ecodes.KEY_8 	     cc_xy(28,29)  	    	cc_whl(30)	note_on(28)
+evdev.ecodes.KEY_9	     cc_xy(32,33)  	    	cc_whl(34)	note_on(32)
+evdev.ecodes.KEY_0	     cc_xy(36,37)  	    	cc_whl(38)	note_on(36)
+evdev.ecodes.KEY_KPPLUS      cc_xy(40,41)  	    	cc_whl(42)	note_on(40)
+evdev.ecodes.KEY_KPMINUS     cc_xy(44,45)  	    	cc_whl(46)	note_on(44)
+evdev.ecodes.KEY_A	     cc_xy(48,49)  	    	cc_whl(50)	note_on(48)
+evdev.ecodes.KEY_Q 	     cc_xy(52,53)	    	cc_whl(54)	note_on(52)
+evdev.ecodes.KEY_W	     cc_xy(56,57)   		cc_whl(58)	note_on(56)
+

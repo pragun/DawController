@@ -1,0 +1,24 @@
+The SDCard.img here works great, and even better with the following changes
+
+A. SSHD
+DropBear will create new ssh host keys everytime it boots up. The fix is to 
+0. Set root password
+1. Mount / as rw
+2. Remove the symlinked /etc/dropbear
+3. Create a normal folder /etc/dropbear
+4. ssh into localhost, thereby forcing dropbear to create new keys
+4(alt). Use dropbearkey to create a host key
+5. Enjoy
+
+
+B. Inittab
+1. Add this to inittab 
+tty1::respawn::/bin/sh -c "cd /root/dawcontroller; /usr/bin/python dawcontroller.py"
+2. Move all the sysvinit stuff after dawcontroller
+
+C. To take out about one second of bootup time
+1. Remove console on ttyAMA0 from cmdline.txt
+2. To do this remount / as rw
+3. mount /dev/mmcblk0p1 as /mnt/boot (might have to make that path)
+4. nano cmdline.txt, and remove the two console parameters
+

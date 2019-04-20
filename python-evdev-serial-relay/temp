@@ -1,0 +1,140 @@
+handler_dict = {
+ABS_MT_SLOT		:self.abs_mt_slot,		 
+ABS_MT_TOUCH_MAJOR	:self.abs_mt_touch_major,	
+ABS_MT_TOUCH_MINOR	:self.abs_mt_touch_minor,	
+ABS_MT_WIDTH_MAJOR	:self.abs_mt_width_major,	
+ABS_MT_WIDTH_MINOR	:self.abs_mt_width_minor,	
+ABS_MT_ORIENTATION	:self.abs_mt_orientation,	
+ABS_MT_POSITION_X	:self.abs_mt_position_x	,
+ABS_MT_POSITION_Y	:self.abs_mt_position_y	,
+ABS_MT_TOOL_TYPE	:self.abs_mt_tool_type	,
+ABS_MT_BLOB_ID		:self.abs_mt_blob_id	,	
+ABS_MT_TRACKING_ID	:self.abs_mt_tracking_id,	
+ABS_MT_PRESSURE		:self.abs_mt_pressure	,	
+ABS_MT_DISTANCE		:self.abs_mt_distance	,	
+ABS_MT_TOOL_X		:self.abs_mt_tool_x	,	
+ABS_MT_TOOL_Y		:self.abs_mt_tool_y	,
+}
+
+        handler_dict = {
+           evdev.ecodes.ABS_MT_SLOT		:self.abs_mt_slot,		 
+           evdev.ecodes.ABS_MT_TOUCH_MAJOR	:self.abs_mt_touch_major,	
+           evdev.ecodes.ABS_MT_TOUCH_MINOR	:self.abs_mt_touch_minor,	
+           evdev.ecodes.ABS_MT_WIDTH_MAJOR	:self.abs_mt_width_major,	
+           evdev.ecodes.ABS_MT_WIDTH_MINOR	:self.abs_mt_width_minor,	
+           evdev.ecodes.ABS_MT_ORIENTATION	:self.abs_mt_orientation,	
+           evdev.ecodes.ABS_MT_POSITION_X	:self.abs_mt_position_x	,
+           evdev.ecodes.ABS_MT_POSITION_Y	:self.abs_mt_position_y	,
+           evdev.ecodes.ABS_MT_TOOL_TYPE	:self.abs_mt_tool_type	,
+           evdev.ecodes.ABS_MT_BLOB_ID	:self.abs_mt_blob_id	,	
+           evdev.ecodes.ABS_MT_TRACKING_ID	:self.abs_mt_tracking_id,	
+           evdev.ecodes.ABS_MT_PRESSURE	:self.abs_mt_pressure	,	
+           evdev.ecodes.ABS_MT_DISTANCE	:self.abs_mt_distance	,	
+           evdev.ecodes.ABS_MT_TOOL_X	:self.abs_mt_tool_x	,	
+           evdev.ecodes.ABS_MT_TOOL_Y	:self.abs_mt_tool_y	,
+        }
+
+
+
+
+
+evdev.ecodes.BTN_TOOL_QUINTTAP	:self.btn_tool_quinttap,	
+evdev.ecodes.BTN_TOUCH		:self.btn_touch,		
+evdev.ecodes.BTN_TOOL_DOUBLETAP	:self.btn_tool_doubletap,
+evdev.ecodes.BTN_TOOL_TRIPLETAP	:self.btn_tool_tripletap,
+evdev.ecodes.BTN_TOOL_QUADTAP	:self.btn_tool_quadtap,	
+
+def btn_tool_quinttap(self,event):
+    pass
+    
+def btn_touch(self,event):
+    pass
+    
+def btn_tool_doubletap(self,event):
+    pass
+    
+def btn_tool_tripletap(self,event):
+    pass
+    
+def btn_tool_quadtap(self,event):
+    pass
+
+
+
+
+
+
+
+
+def abs_mt_slot(self,event):
+pass
+
+def abs_mt_touch_major(self,event):
+pass
+
+def abs_mt_touch_minor(self,event):
+pass
+
+def abs_mt_width_major(self,event):
+pass
+
+def abs_mt_width_minor(self,event):
+pass
+
+def abs_mt_orientation(self,event):
+pass
+
+def abs_mt_position_x(self,event):
+pass
+
+def abs_mt_position_y(self,event):
+pass
+
+def abs_mt_tool_type(self,event):
+pass
+
+def abs_mt_blob_id(self,event):
+pass
+
+def abs_mt_tracking_id(self,event):
+pass
+
+def abs_mt_pressure(self,event):
+pass
+
+def abs_mt_distance(self,event):
+pass
+
+def abs_mt_tool_x(self,event):
+pass
+
+def abs_mt_tool_y(self,event):
+pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

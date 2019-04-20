@@ -1,0 +1,26 @@
+#Legend
+#What functions to call when some button is pressed on the mouse
+#Which button?	   	     #ReportX,Y	    	    	#ReportWhl	#OnlyKeypress
+#Note: As of 3/24/2019, because of need
+#the following methods of inbuilt debouncing built in
+# 1. report_xy_as_scroll,
+# 2. report_xy_as_cursor,
+# 3. key_press_release
+
+
+None 		   	     report_movement(10)    	report_scroll()	do_nothing()					
+evdev.ecodes.KEY_1 	     std_cc_xy()		cc_whl(5)	note_on_off(1)					
+evdev.ecodes.KEY_2	     std_cc_xy()		cc_whl(5)	note_on_off(2)					
+evdev.ecodes.KEY_3 	     std_cc_xy()	    	cc_whl(5)	note_on_off(3)					
+evdev.ecodes.KEY_4 	     std_cc_xy()		cc_whl(5)	note_on_off(4)					
+evdev.ecodes.KEY_5 	     std_cc_xy()  	    	cc_whl(5)	note_on_off(5)					
+evdev.ecodes.KEY_6 	     std_cc_xy()  	    	cc_whl(5)	note_on_off(6)					
+evdev.ecodes.KEY_7 	     std_cc_xy()  	    	cc_whl(5)	note_on_off(7)					
+evdev.ecodes.KEY_8 	     std_cc_xy()  	    	cc_whl(5)	note_on_off(8)					
+evdev.ecodes.KEY_9	     std_cc_xy()  	    	cc_whl(5)	note_on_off(9)					
+evdev.ecodes.KEY_0	     std_cc_xy()  	    	cc_whl(5)	note_on_off(10)					
+evdev.ecodes.KEY_KPPLUS      std_cc_xy()  	    	cc_whl(5)	note_on_off(11)					
+evdev.ecodes.KEY_KPMINUS     std_cc_xy()  	    	cc_whl(5)	note_on_off(12)					
+evdev.ecodes.KEY_A	     std_cc_xy()  	    	cc_whl(5)	note_on_off(13)					
+evdev.ecodes.KEY_Q 	     report_xy_as_scroll(15)	cc_whl(5)	key_press_release(arduino_keys.KEY_PAGE_UP)		
+evdev.ecodes.KEY_W	     report_xy_as_cursor(100)   cc_whl(5)	key_press_release(arduino_keys.KEY_PAGE_DOWN)	

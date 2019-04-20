@@ -1,0 +1,15 @@
+3-6-9-12
+2-5-8-11
+1-4-7-10
+
+[1] = adjust_cursor_position
+[2] = adjust_horizontal_scroll;
+[3] = adjust_horizontal_zoom_level;
+[4] = adjust_selected_tracks_height;
+[5] = adjust_last_touched_tracks_height;
+[6] = adjust_all_tracks_height;
+[7] = move_left_selection_edge;
+[8] = move_right_selection_edge;
+[9] = select_next_prev_region;
+[10] = select_next_prev_marker;	//Button#10
+[11] = select_and_move_to_next_prev_item;

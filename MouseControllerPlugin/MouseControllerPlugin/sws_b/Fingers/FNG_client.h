@@ -1,0 +1,2 @@
+int FNGExtensionInit();
+void FNGExtensionExit();

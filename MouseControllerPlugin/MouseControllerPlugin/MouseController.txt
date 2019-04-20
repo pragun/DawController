@@ -1,0 +1,43 @@
+#Notes about the MouseController ReaperPlugin
+
+##1. Number of Midi Notes Received
+--------------------------------
+The mouse is configured to send reports at 500Hz - 200Hz. Reaper runs the
+Run() function 15-30Hz. So, a lot of the MIDI reports get backlogged into
+the midi-event-queue. So, the reports need to be combined together.
+
+`Queue: CC_<>,CC_<>,N_ON,CC_<>,CC_<>,N_OFF`
+
+The CC_<> values can be combined together. Creating
+`Queue: CC_<>,N_ON,CC_<>,N_OFF.`
+
+This reduces the number of times the zoom/scroll/move functions get called.
+Obviously, only similar CC values need to be combined i.e CC1 with CC1,
+... CCn with CCn. Also, the combination must start and stop at Note ON and
+Note OFF Midi messages.
+
+The problem with this kinda approach is that CC_<> values are limited to
+7-bits, so the cumulated CC should be an int32 or something like that.
+
+
+##2.SWS Extension Static Linking Library
+--------------------------------------
+The MouseController uses many functions created in the SWS Extension. The way
+the projecti is organized, the SWS MSVC Project is imported into the
+MouseController MSVC `Solution`. The imported SWS Extension `Project` is used as
+a reference (-- MSVC term for linking together) for the MouseController project.
+For this to happen, several things need to happen.
+
+1. `_ITERATOR_LEVEL_DEBUG` needs to be matched across the two projects, so both
+projects have an extra preprocessor flag to matching these. In an ideal world,
+MSVC should match that is both projects are set to use the same configuration
+viz : Debug/Release/Test/etc, but there seems to be some black magic involved.
+(Black magic: Magic that I don't know how to make happen, so I just add
+pre-processor flags)
+2. The choice of RuntimeLibrary for both projects should match. So far, using
+`MD_Debug/MD` seems to work.
+3. There are many variables/functions in  `sws/sws_extension.cpp` that collide
+with `plugin_main.cpp` in MouseController. These need to be declared using
+the 'extern'. [Minor C++ Note: `extern int a = 0;` does not count. 'extern'
+works as a declaration not as a definition, hence `extern int;`]
+
